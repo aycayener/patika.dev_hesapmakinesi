@@ -1,34 +1,12 @@
-actor hesap_makinesi{
-var hucre: Int = 0;
-public func toplama(s : Int) : async Int {
-  hucre += s;
-  hucre
-  //(Debug.print(debug_show (hucre));)
-};
+# Patika.dev Hesap Makinesi
 
-public func cikarma(s : Int) : async Int {
-  hucre -= s;
-  hucre
-  
-};
+Bu proje, Motoko dilinde yazılmış basit bir hesap makinesidir. Aşağıdaki işlemleri destekler:
+- Toplama
+- Çıkarma
+- Çarpma
+- Bölme (sıfıra bölme kontrolü içerir)
+- Belleği temizleme
 
-public func carpma(s : Int) : async Int {
-  hucre *= s;
-  hucre
-  
-};
-public func bolme(s : Int) : async ?Int {
-  if (s==0){
-    null
-  }else{
-    hucre /= s;
-    ?hucre
-  }
-   
-};
+## Kullanım
 
-public func temizle(): async(){
-  hucre := 0;
-};
-
-}
+Kod Motoko Playground ortamında çalıştırılabilir. Kod dosyasını açtıktan sonra işlevleri çağırarak sonuçları görebilirsiniz.
